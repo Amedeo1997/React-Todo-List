@@ -19,7 +19,7 @@ body {
 
 .app-header li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 25px;
   border-color: white;
 }
 
@@ -31,7 +31,7 @@ body {
 
 .app-header a.active {
   color: #000;
-  pointer-events: none; /* Disabilita il click sul link attivo */
+  pointer-events: none;
 }
 
 .app-header {
@@ -43,5 +43,20 @@ body {
 }
 
 .app {
-  padding-bottom: 50px; /* Spazio per il footer */
+  padding-bottom: 50px;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-icon {
+  width: 30px;
+  height: auto;
+}
+
+
+.nav-link.active {
+  border-bottom: 3px solid #000;
 }

@@ -1,0 +1,89 @@
+.shopping-list-container {
+    max-width: 414px; /* Larghezza simile a quella di iPhone 14 Pro Max */
+    margin: 20px auto; /* Centra il container */
+    background: #fff;
+    padding: 20px;
+}
+
+/* Titolo */
+.shopping-title {
+    text-align: center;
+    font-size: 24px;
+    color: #764B36;
+    font-family: 'Brightwall', sans-serif; /* Usa il font personalizzato */
+}
+
+/* Container per input con linea in evidenza */
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #764B36; /* Linea sotto gli input */
+    padding-bottom: 10px;
+}
+
+/* Stili per input di articoli e quantità */
+.item-input,
+.quantity-input {
+    flex-grow: 1;
+    padding: 8px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-family: "Caveat", cursive;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.quantity-input {
+    width: 80px; /* Larghezza specifica per l'input della quantità */
+}
+
+/* Pulsanti specifici della shopping list */
+.add-item-button,
+.save-item-button,
+.edit-item-button,
+.toggle-purchase-button {
+    padding: 8px 16px;
+    background-color: #764B36;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Stile per la lista di acquisto */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Elementi della lista */
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Stile quando un articolo è acquistato */
+li.purchased {
+    text-decoration: line-through;
+}
+
+/* Container per le icone all'interno degli elementi della lista */
+.icon-container {
+    display: flex;
+    gap: 10px; /* Distanza tra i bottoni */
+}
+
+/* Stili per le icone */
+.icon-button img {
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,124 @@
+/* Stile generale per la TodoList */
+@import url('https://fonts.cdnfonts.com/css/brightwall');
+
+.todo-list-container {
+    max-width: 414px; /* Larghezza simile a quella di iPhone 14 Pro Max */
+    margin: 20px auto; /* Centra il container */
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Titolo */
+.todo-title {
+    text-align: center;
+    font-size: 24px;
+    color: #764B36;
+    font-family: 'Brightwall', sans-serif; /* Usa il font personalizzato */
+}
+
+/* Input container con linea in evidenza */
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distanzia correttamente l'input e il pulsante */
+    border-bottom: 2px solid #764B36; /* Linea in basso */
+    padding-bottom: 10px;
+}
+
+/* Input e bottoni */
+.todo-input,
+.todo-item input[type="text"] { /* Applica gli stessi stili agli input della lista e al nuovo task */
+    flex-grow: 1;
+    padding: 8px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: none;
+    box-shadow: none;
+    outline: none; /* Rimuove l'outline quando in focus */
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.add-task-button {
+    padding: 8px 16px;
+    background-color: #764B36;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Stile per la lista */
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #764B36;
+    font-size: 20px;
+}
+
+.icon-button {
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+}
+/* Pulsanti con icone */
+.icon-button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Effetto ingrandimento per la modifica */
+.todo-item.editing {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Personalizzazione del checkbox */
+.todo-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: solid 1px #764B36;
+    border-radius: 4px 0 4px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Stile per il segno di spunta */
+.todo-checkbox:checked::before {
+    content: '✔';
+    color: #000000;
+    position: absolute;
+    left: 2px;
+    top: -3px;
+    font-size: 18px;
+}
+
+/* Pulsanti con icone sulla destra */
+.icon-container {
+    display: flex;
+    margin-left: auto; /* Spinge le icone sulla destra */
+}
+
+/* Effetti visivi per il checkbox non selezionato e selezionato */
+.todo-checkbox:not(:checked),
+.todo-checkbox:checked {
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.todo-checkbox:not(:checked):hover,
+.todo-checkbox:checked:hover {
+    border-color: #a06060; /* Cambia il colore del bordo al passaggio del mouse */
+}

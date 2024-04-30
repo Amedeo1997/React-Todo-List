@@ -72,3 +72,36 @@
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
+
+/* Responsive Media Queries */
+@media (min-width: 768px) {
+    .appointment-container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .appointment-container {
+        max-width: 1024px;
+    }
+
+    .appointment-title {
+        font-size: 32px;
+    }
+
+    .appointment-input,
+    .appointment-item input[type="text"],
+    .appointment-item input[type="time"],
+    .appointment-item input[type="date"] {
+        font-size: 24px;
+    }
+
+    .appointment-item {
+        font-size: 24px;
+    }
+
+    .icon-button img {
+        width: 30px;
+        height: 30px;
+    }
+}

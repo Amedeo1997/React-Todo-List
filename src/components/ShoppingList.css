@@ -87,3 +87,35 @@ li.purchased {
     width: 24px;
     height: 24px;
 }
+
+
+/* Responsive Media Queries */
+@media (min-width: 768px) {
+  .shopping-list-container {
+      max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .shopping-list-container {
+      max-width: 1024px;
+  }
+
+  .shopping-title {
+      font-size: 32px;
+  }
+
+  .item-input,
+  .quantity-input {
+      font-size: 24px;
+  }
+
+  .icon-button img {
+      width: 30px;
+      height: 30px;
+  }
+
+  li {
+      font-size: 24px;
+  }
+}

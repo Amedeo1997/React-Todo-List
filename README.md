@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# React Todo List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React application is a comprehensive productivity tool that includes a Todo List, Shopping List, and Appointments scheduler. Each module is designed to help organize tasks, shopping items, and appointments efficiently. The project is live and can be viewed [here](https://masha-to-do-list.netlify.app/).
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Todo List
+- **Add Tasks**: Users can add tasks to their list.
+- **Edit Tasks**: Tasks can be edited inline, allowing for quick updates.
+- **Complete Tasks**: Users can mark tasks as completed, which will cross the task out visually.
+- **Delete Tasks**: Tasks can be removed from the list.
+- **Persistence**: Tasks are saved in the browser's localStorage, ensuring they are not lost on page reload.
 
-### `npm start`
+### Shopping List
+- **Add Shopping Items**: Users can add items to their shopping list along with the quantity needed.
+- **Edit Shopping Items**: Items can be edited directly in the list.
+- **Mark as Purchased**: Users can check off items they have purchased.
+- **Delete Items**: Items can be removed from the shopping list.
+- **Persistence**: Shopping list items are saved in localStorage.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Appointments
+- **Add Appointments**: Users can schedule appointments with a date, time, and description.
+- **Edit Appointments**: Appointments can be edited.
+- **Delete Appointments**: Unneeded appointments can be removed.
+- **Sorting and Grouping**: Appointments are grouped by date and sorted by time within each group.
+- **Persistence**: Appointments are stored in localStorage.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### General
+- **Loading Screen**: A loading screen is displayed on initial load, simulating a loading phase.
+- **Responsive Navigation**: The application uses React Router for navigating between the different functionalities, with clear icons for each section.
 
-### `npm test`
+## Technologies
+- **React**: Utilizes functional components with hooks for state management and effects.
+- **Local Storage**: Uses localStorage to persist data across sessions.
+- **React Router**: For seamless navigation between different sections of the application.
+- **Custom CSS**: Styling is achieved using separate CSS files for each component, ensuring modularity and ease of changes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup
+To run this project locally, clone the repository and install the dependencies:
 
-### `npm run build`
+```bash
+git clone https://github.com/yourusername/React-Todo-List.git
+cd React-Todo-List
+npm install
+npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

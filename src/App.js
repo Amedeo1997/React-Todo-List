@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-do
 import TodoList from './components/TodoList';
 import ShoppingList from './components/ShoppingList';
 import Appointments from './components/Appointments';
-import LoadingScreen from './components/LoadingScreen'; // Make sure this path is correct
+import LoadingScreen from './components/LoadingScreen';
 import './App.css';
 import shoppingIcon from './pictures/shopping-cart.svg';
 import appointmentsIcon from './pictures/calendar-schedule.svg';

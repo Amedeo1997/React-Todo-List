@@ -144,3 +144,15 @@
         font-size: 24px;
     }
 }
+
+
+@media (max-width: 360px) {
+    .todo-input,
+    .todo-item input[type="text"] {
+        font-size: 16px;
+    }
+
+    .todo-item {
+        font-size: 16px;
+    }
+}

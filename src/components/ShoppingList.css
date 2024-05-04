@@ -121,22 +121,6 @@ li.purchased {
   }
 }
 
-@media (max-width: 429px) {
-  .item-input,
-  .quantity-input {
-      font-size: 14px;
-  }
-
-  .icon-button img {
-      width: 20px;
-      height: 20px;
-  }
-
-  li {
-      font-size: 14px;
-  }
-}
-
 @media (max-width: 390px) {
   .item-input,
   .quantity-input {

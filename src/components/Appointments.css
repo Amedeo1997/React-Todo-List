@@ -107,26 +107,6 @@
     }
 }
 
-
-
-@media (max-width: 429px) {
-    .appointment-input,
-    .appointment-item input[type="text"],
-    .appointment-item input[type="time"],
-    .appointment-item input[type="date"] {
-        font-size: 12px;
-    }
-
-    .appointment-item {
-        font-size: 14px;
-    }
-
-    .icon-button img {
-        width: 16px;
-        height: 16px;
-    }
-}
-
 @media (max-width: 385px) {
     .appointment-input,
     .appointment-item input[type="text"],
